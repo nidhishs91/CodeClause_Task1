@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://i.pinimg.com/originals/0e/b1/56/0eb15636563ecc2920056a5dd6e496c5.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    padding: 15px 0;
+}
+
+.h1 {
+    font-family: "Goldman";
+    font-size: 40px;
+    padding: 10px 0px;
+    margin-left: 150px;
+}
+
+.please {
+    font-family: "Goldman";
+    font-size: 32px;
+    position: absolute;
+    top: 15%;
+    left: 23.5%;
+    transform: translate(-50%, -50%);
+}
+
+.form-control {
+    font-family: "Goldman";
+    font-size: 22px;
+    position: absolute;
+    top: 23%;
+    left: 25%;
+    width: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.form-control button {
+    font-size: 10px;
+}
+
+.uploadbutton {
+    font-family: "Goldman";
+    font-size: 20px;
+    position: absolute;
+    top: 34%;
+    left: 25%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: white;
+}
+
+.uploadbutton:hover {
+    background-color: rgb(232, 103, 56);
+    color: white;
+}
+
+.downloadbutton {
+    font-family: "Goldman";
+    font-size: 20px;
+    position: absolute;
+    top: 44%;
+    left: 25%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: white;
+}
+
+.downloadbutton:hover {
+    background-color: rgb(232, 103, 56);
+    color: white;
+}
+
+img {
+    margin-top: 20px;
+    background: url(images/criss-cross.webp);
+    width: 30%;
+    float: right;
+    margin-right: 250px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
