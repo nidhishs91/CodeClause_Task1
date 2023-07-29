@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Goldman";
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+header .icon {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 110px 100px;
+    align-items: center;
+}
+
+@media (max-width:1000px) {
+    section {
+        padding: 100px 50px;
+    }
+}
+
+/* 
+@media (max-width:800px) {
+    header .icon {
+        display: inline-block
+    }
+} */
+
+@media (max-width:600px) {
+    section {
+        padding: 125px 30px;
+    }
+}
+
+
+header {
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.4s;
+    padding: 20px 100px;
+    z-index: 10;
+    color: white;
+}
+
+
+header.fixed {
+    padding: 15px 100px;
+    background-color: rgb(242, 232, 232);
+}
+
+header.fixed .Logo {
+    color: black;
+}
+
+header.fixed ul li a {
+    color: black;
+    padding: 7px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+header ul li a {
+    color: white;
+    padding: 7px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+header.fixed ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+header ul li a:hover {
+    background-color: rgb(137, 158, 185);
+    color: white;
+}
+
+header img {
+    border-radius: 50px;
+}
+
+header .nav {
+    display: flex;
+}
+
+header .Logo {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.toggle_btn {
+    display: none;
+}
+
+.headerdown {
+    display: none;
+}
+
+header .nav li {
+    margin: 0 15px;
+}
+
+header .nav li:first-child {
+    margin-left: 0;
+}
+
+header .nav li:right-child {
+    margin-right: 0;
+}
+
+@media (max-width:1000px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    header .Logo {
+        position: absolute;
+        /* top: 10%; */
+    }
+
+    header .nav li {
+        display: none;
+    }
+
+    /* .toggle_btn {
+        position: absolute;
+        display: block;
+        right: 2%;
+        font-size: 1.4em;
+        cursor: pointer;
+    } */
+
+    header.fixed {
+        padding: 30px 100px;
+        background-color: rgb(242, 232, 232);
+    }
+
+    header.fixed .Logo {
+        color: black;
+        position: absolute;
+        left: 5%;
+        top: 30%;
+    }
+}
+
+@media (max-width:700px) {
+    header {
+        flex-direction: column;
+    }
+
+    header h1 {
+        margin-bottom: 15px;
+    }
+
+    header .nav li {
+        display: none;
+    }
+}
+
+.box {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.box video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.box h1 {
+    margin-bottom: 15px;
+    font-size: 75px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.box p {
+    margin-bottom: 40px;
+    font-size: 25px;
+
+}
+
+.box button {
+    padding: 20px;
+    width: 18%;
+    font-size: 25px;
+    background: transparent;
+    font-family: "Goldman";
+    color: white;
+    border-radius: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.box button:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width:800px) {
+    .box {
+        min-height: 810px;
+    }
+
+    .box h1 {
+        font-size: 42px;
+    }
+
+    .box p {
+        font-size: 20px;
+    }
+
+    .box button {
+        padding: 20px;
+        width: 80%;
+        font-size: 25px;
+        background: transparent;
+        font-family: "Goldman";
+        color: white;
+        border-radius: 50px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+}
+
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ffffff, 0 0 10px #e60032, 0 0 10px #000ce6;
+    }
+
+    to {
+        text-shadow: 0 0 10px #ffffff, 0 0 10px #4d6bff;
+    }
+}
